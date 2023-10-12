@@ -1,6 +1,5 @@
 {
-    "manifest_version": "2",
-    "api_version": "1",
+    "required_api_version": "1",
     "name": "LocalListeners",
     "description": "Local listeners extension",
     "developer_name": "Michael Sandler",

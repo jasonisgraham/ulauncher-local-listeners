@@ -4,6 +4,12 @@ This extension provides a quick way to browse to local http or https listeners i
 ![ulauncher-local-listeners extension screenshot](screenshot.png)
 
 ## Requirements
+requires 'curl-config'
+For ubuntu, `sudo apt install libcurl4-openssl-dev libssl-dev`
+
+requires httplib:
+`pip3 install http.client`
+
 This extension requires package `psutil` for python2.
 To install:
 
