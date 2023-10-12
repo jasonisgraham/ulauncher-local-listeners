@@ -2,7 +2,7 @@ import sys
 import time
 import socket
 import psutil
-import httplib
+import http.client
 import webbrowser
 
 from time import sleep
@@ -76,7 +76,7 @@ class ItemEnterEventListener(EventListener):
 
     def check_url(self, url):
         url = urlparse(url)
-        conn = httplib.HTTPConnection(url.netloc)
+        conn = http.client.HTTPConnection(url.netloc)
         conn.request("HEAD", url.path)
         if conn.getresponse():
             return True
